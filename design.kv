@@ -1,6 +1,3 @@
-<RootWidget>:
-    LoginScreen:
-        name: "Login_screen"
 <LoginScreen>:
     GridLayout: 
         cols: 1
@@ -21,4 +18,21 @@
                 text: "forgot password"
             Button: 
                 text: "Sign Up"
+                on_press: root.sign_up()
+<SignUpScreen>
+    GridBoxLayout:
+        cols: 1
+        Label:
+            text: "Sign Up"
+        TextInput:
+            hint_text: "Username"
+        TextInput:
+            hint_text: "Password"
+        Button: 
+            text: "Submit"
 
+<RootWidget>:
+    LoginScreen:
+        name: "login_screen"
+    SignUpScreen: 
+        name: "sign_up_screen"
