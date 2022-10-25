@@ -5,6 +5,9 @@ from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.uix.gridlayout import GridLayout
+from hoverable import HoverBehavior 
+from kivy.uix.image import Image
+from kivy.uix.behaviors import ButtonBehavior
 import json, glob
 from datetime import datetime
 from pathlib import Path 
@@ -69,7 +72,8 @@ class LoginScreenSuccess(Screen):
         else: 
             self.ids.quote.text = "try a more generic feeling"
 
-
+class ImageButton(HoverBehavior, Image, ButtonBehavior):
+    pass
 
 class MainApp(App):
     def build(self):
