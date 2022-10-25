@@ -1,12 +1,1 @@
-{
-    "user1": {
-        "username": "natalia",
-        "password": "password1", 
-        "created": "2022-10-24 00:16:28.293901"
-        }, 
-    "user2": {
-        "username": "nat", 
-        "password": "password2", 
-        "created": "2022-10-24 00:28:07.315781"
-        }
-}
+{"user1": {"username": "natalia", "password": "password1", "created": "2022-10-24 00:16:28.293901"}, "user2": {"username": "nat", "password": "password2", "created": "2022-10-24 00:28:07.315781"}, "u2": {"username": "u2", "password": "p2", "created": "2022-10-24 17-09-46"}}
