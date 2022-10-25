@@ -32,6 +32,8 @@
             spacing: 10, 0
             Button: 
                 text: "forgot password"
+                background_color: 1, 1, 1, 0
+                opacity: 1 if self.state == 'normal' else 0.5
             Button: 
                 text: "Sign Up"
                 on_press: root.sign_up()
