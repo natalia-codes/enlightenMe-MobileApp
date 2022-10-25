@@ -59,9 +59,11 @@
         Label:
             text: "How are you feeling today?"
         TextInput:
+            id: feeling
             hint_text: "Try: happy, sad, angry"
         Button: 
             text: "Enlighten Me!"
+            on_press: root.get_quote(root.ids.feeling.text)
         Label:
             text: ""
 
