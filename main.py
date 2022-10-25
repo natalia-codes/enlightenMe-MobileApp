@@ -20,6 +20,8 @@ class LoginScreen(Screen):
             users = json.load(file)
         if uname in users and users[uname]['password'] == pword:
             self.manager.current = "login_screen_success"
+        else:
+            self.ids.login_wrong.text = "wrong username or password"
 
 
 

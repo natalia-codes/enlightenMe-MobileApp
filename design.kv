@@ -14,6 +14,10 @@
             Button:
                 text: "Login"
                 on_press: root.login(root.ids.username.text, root.ids.password.text)
+            Label: 
+                id: login_wrong
+                text: ""
+
 
         GridLayout: 
             cols: 2
@@ -51,7 +55,7 @@
         cols: 1
         Button: 
             text: "logout"
-            on_press: log_out()
+            on_press: root.log_out()
         Label:
             text: "How are you feeling today?"
         TextInput:
