@@ -29,9 +29,11 @@ class SignUpScreen(Screen):
 # overwrite prev file & create new file & from empty file write new users dictionary
         with open("users.json", "w") as file:
             json.dump(users, file)
+        self.manager.current = "sign_up_screen_success"
 
 class SignUpScreenSuccess(Screen):
-    pass
+    def go_to_login(self):
+        self.manager.current = "login_screen"
 
 class MainApp(App):
     def build(self):
