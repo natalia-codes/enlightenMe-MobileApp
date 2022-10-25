@@ -66,6 +66,8 @@ class LoginScreenSuccess(Screen):
             with open(f"quotes/{feel}.txt") as file:
                 quotes = file.readlines()
             self.ids.quote.text = random.choice(quotes)
+        else: 
+            self.ids.quote.text = "try a more generic feeling"
 
 
 
