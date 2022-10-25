@@ -30,6 +30,9 @@ class SignUpScreen(Screen):
         with open("users.json", "w") as file:
             json.dump(users, file)
 
+class SignUpScreenSuccess(Screen):
+    pass
+
 class MainApp(App):
     def build(self):
         return RootWidget()
